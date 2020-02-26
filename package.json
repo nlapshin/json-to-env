@@ -17,15 +17,13 @@
   },
   "homepage": "https://github.com/nlapshin/json-to-env#readme",
   "devDependencies": {
-    "husky": "^4.2.3",
+    "pre-commit": "^1.2.2",
     "tap": "^14.10.6"
   },
   "dependencies": {
     "object-deep-iteration": "^1.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  }
+  "pre-commit": [
+    "test"
+  ]
 }
