@@ -1,0 +1,22 @@
+{
+  "name": "json-to-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlapshin/json-to-env.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nlapshin/json-to-env/issues"
+  },
+  "homepage": "https://github.com/nlapshin/json-to-env#readme",
+  "devDependencies": {
+    "tap": "^14.10.6"
+  }
+}
