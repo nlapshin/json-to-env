@@ -18,5 +18,8 @@
   "homepage": "https://github.com/nlapshin/json-to-env#readme",
   "devDependencies": {
     "tap": "^14.10.6"
+  },
+  "dependencies": {
+    "object-deep-iteration": "^1.0.0"
   }
 }
