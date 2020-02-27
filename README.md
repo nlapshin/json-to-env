@@ -56,6 +56,30 @@ Env:
   DEEP_ENV=value
 ```
 
+## Example with the dynamic substring replacement
+
+Script:
+```js
+  const jsonToEnv = require('json-to-env2');
+
+  const json = {
+    deep: {
+      env: 'prefix-$DYNAMIC_ENV',
+    }
+  }
+
+  const mapping = {
+    $DYNAMIC_ENV: 'value'
+  }
+
+  const env = jsonToEnv(json, mapping);
+```
+
+Env:
+```js
+  DEEP_ENV=prefix-value
+```
+
 # Test
 
 ```sh
