@@ -35,3 +35,13 @@ tap.equal(converter({
 }, { 
   '$GLOBAL_ENV': 'value'
 }), `DEEP_ENV=prefix_value\n`);
+
+tap.equal(converter({
+  foo: {
+    bar: {
+      env: 'value',
+    }
+  }
+}, { 
+  '$GLOBAL_ENV': 'value'
+}), `FOO_BAR_ENV=value\n`);

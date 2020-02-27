@@ -18,7 +18,7 @@ module.exports = (json, mapping = {}) => {
 }
 
 function convertPath(path) {
-  return path.toUpperCase().replace(/\./, '_');
+  return path.toUpperCase().replace(/\./g, '_');
 }
 
 function convertValue(jsonValue, mapping) {
