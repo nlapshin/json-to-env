@@ -22,5 +22,15 @@ function convertPath(path) {
 }
 
 function convertValue(jsonValue, mapping) {
-  return mapping[jsonValue] ? mapping[jsonValue] : jsonValue;
+  if (typeof jsonValue !== 'string') {
+    return jsonValue;
+  }
+
+  for (let key in mapping) {
+    if (mapping.hasOwnProperty(key)) {
+      jsonValue = jsonValue.replace(key, mapping[key])
+    }
+  }
+
+  return jsonValue;
 }
