@@ -1,0 +1,17 @@
+node_modules
+.DS_STORE
+*~
+test
+*.test.js
+.git
+.gitignore
+.tmp
+*.swo
+*.swp
+*.swn
+*.swm
+*.log
+.eslintrc.js
+.editorconfig
+LICENCE
+README.md
